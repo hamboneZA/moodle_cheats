@@ -3,7 +3,7 @@
 # Dirty moodle reset from backup files and a .gz mysqldump
 # Assumes backup, moodledata and core are in the same directory
 
-echo
+
 echo "--------------------------"
 echo "| \e[1;31m MOODLE IS BEING RESET\e[0m |"
 echo "--------------------------"
@@ -59,7 +59,7 @@ echo -n ">>>>>>>>>>>>>>>>>>>>>>>>>>[100%]\r"
 ###############################
 
 sudo -u www-data php /var/www/moodle/admin/cli/maintenance.php --disable >> /dev/null 2>&1
-echo "\e[1;30m ----------        DISABLED MAINTANENCE MODE      -------------\e[0m \r"
+echo -n "\e[1;30m ----------        DISABLED MAINTANENCE MODE      -------------\e[0m \r"
 
 echo
 echo "--------------------------"
